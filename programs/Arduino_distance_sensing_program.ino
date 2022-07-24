@@ -1,10 +1,10 @@
 #include <ESP8266WiFi.h>
 #include<ESP8266WebServer.h>
-String ssid="ESP8266 Server";
-String pass="";
+String ssid="ESP8266 Server";// set your hotspot name to be shown to the devices 
+String pass="";//set your hotspot password
 static float c=0;
-#define echoPin 14
-#define trigPin 12 
+#define echoPin 14 //I am using D5 as echo pin
+#define trigPin 12 //I am using D6 as trig pin
 long duration; 
 int distance;
 ESP8266WebServer Server(80);
